@@ -16,6 +16,9 @@
 		000AF5162140094900B0ECA9 /* MyFrameWorkMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000AF50D2140094900B0ECA9 /* MyFrameWorkMacOS.framework */; };
 		000AF51B2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000AF51A2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift */; };
 		000AF51D2140094900B0ECA9 /* MyFrameWorkMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 000AF50F2140094900B0ECA9 /* MyFrameWorkMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00C7F4852140110200EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
+		00C7F4862140112100EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
+		00C7F4872140112100EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 		000AF5152140094900B0ECA9 /* MyFrameWorkMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameWorkMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		000AF51A2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameWorkMacOSTests.swift; sourceTree = "<group>"; };
 		000AF51C2140094900B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C7F4842140110200EDF906 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		000AF5242140095D00B0ECA9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				00C7F4842140110200EDF906 /* Car.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				TargetAttributes = {
 					000AF4D42140092000B0ECA9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					000AF4DC2140092000B0ECA9 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -440,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C7F4852140110200EDF906 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C7F4862140112100EDF906 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C7F4872140112100EDF906 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +634,7 @@
 		000AF4E72140092000B0ECA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -642,6 +652,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ch.christianseiler.MyFrameworkiOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -650,6 +661,7 @@
 		000AF4E82140092000B0ECA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -675,6 +687,7 @@
 		000AF4EA2140092000B0ECA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2TBNE2GD;
 				INFOPLIST_FILE = MyFrameworkiOSTests/Info.plist;
@@ -693,6 +706,7 @@
 		000AF4EB2140092000B0ECA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2TBNE2GD;
 				INFOPLIST_FILE = MyFrameworkiOSTests/Info.plist;
@@ -765,6 +779,7 @@
 		000AF5062140093200B0ECA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2TBNE2GD;
 				INFOPLIST_FILE = MyFrameworkTVOSTests/Info.plist;
@@ -785,6 +800,7 @@
 		000AF5072140093200B0ECA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2TBNE2GD;
 				INFOPLIST_FILE = MyFrameworkTVOSTests/Info.plist;
@@ -861,6 +877,7 @@
 		000AF5222140094900B0ECA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -882,6 +899,7 @@
 		000AF5232140094900B0ECA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
