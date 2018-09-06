@@ -6,11 +6,11 @@ global:
 - LANG=en_US.UTF-8
 - WORKSPACE=MyFramework/MyFramework.xcworkspace
 - IOS_SCHEME="MyFrameworkiOS"
-- IOS_SDK=iphonesimulator9.2
+- IOS_SDK=iphonesimulator11.4
 - OSX_SCHEME="MyFrameworkOSX"
-- OSX_SDK=macosx10.11
+- OSX_SDK=macosx10.13
 - TVOS_SCHEME="MyFrameworkTVOS"
-- TVOS_SDK=appletvsimulator9.1
+- TVOS_SDK=appletvsimulator11.4
 matrix:
 - DESTINATION="OS=11.4,name=iPhone 4S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
 - DESTINATION="OS=11.4,name=iPhone 5"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
