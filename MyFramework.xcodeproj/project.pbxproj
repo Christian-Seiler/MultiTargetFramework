@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		000AF4DE2140092000B0ECA9 /* MyFrameworkiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000AF4D52140092000B0ECA9 /* MyFrameworkiOS.framework */; };
-		000AF4E32140092000B0ECA9 /* MyFrameworkiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000AF4E22140092000B0ECA9 /* MyFrameworkiOSTests.swift */; };
 		000AF4E52140092000B0ECA9 /* MyFrameworkiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 000AF4D72140092000B0ECA9 /* MyFrameworkiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000AF4FA2140093200B0ECA9 /* MyFrameworkTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000AF4F12140093100B0ECA9 /* MyFrameworkTVOS.framework */; };
-		000AF4FF2140093200B0ECA9 /* MyFrameworkTVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000AF4FE2140093200B0ECA9 /* MyFrameworkTVOSTests.swift */; };
 		000AF5012140093200B0ECA9 /* MyFrameworkTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 000AF4F32140093100B0ECA9 /* MyFrameworkTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		000AF5162140094900B0ECA9 /* MyFrameWorkMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000AF50D2140094900B0ECA9 /* MyFrameWorkMacOS.framework */; };
-		000AF51B2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000AF51A2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift */; };
 		000AF51D2140094900B0ECA9 /* MyFrameWorkMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 000AF50F2140094900B0ECA9 /* MyFrameWorkMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00C7F4852140110200EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
 		00C7F4862140112100EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
 		00C7F4872140112100EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
+		00C7F48A2141434900EDF906 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4892141434900EDF906 /* CarTests.swift */; };
+		00C7F48B2141434900EDF906 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4892141434900EDF906 /* CarTests.swift */; };
+		00C7F48C2141434900EDF906 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4892141434900EDF906 /* CarTests.swift */; };
+		00C7F48D214144BC00EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
+		00C7F48E214144BD00EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
+		00C7F48F214144BE00EDF906 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7F4842140110200EDF906 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,21 +53,19 @@
 		000AF4D72140092000B0ECA9 /* MyFrameworkiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFrameworkiOS.h; sourceTree = "<group>"; };
 		000AF4D82140092000B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AF4DD2140092000B0ECA9 /* MyFrameworkiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		000AF4E22140092000B0ECA9 /* MyFrameworkiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameworkiOSTests.swift; sourceTree = "<group>"; };
 		000AF4E42140092000B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AF4F12140093100B0ECA9 /* MyFrameworkTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFrameworkTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		000AF4F32140093100B0ECA9 /* MyFrameworkTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFrameworkTVOS.h; sourceTree = "<group>"; };
 		000AF4F42140093100B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AF4F92140093200B0ECA9 /* MyFrameworkTVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameworkTVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		000AF4FE2140093200B0ECA9 /* MyFrameworkTVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameworkTVOSTests.swift; sourceTree = "<group>"; };
 		000AF5002140093200B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AF50D2140094900B0ECA9 /* MyFrameWorkMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFrameWorkMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		000AF50F2140094900B0ECA9 /* MyFrameWorkMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFrameWorkMacOS.h; sourceTree = "<group>"; };
 		000AF5102140094900B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000AF5152140094900B0ECA9 /* MyFrameWorkMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameWorkMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		000AF51A2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameWorkMacOSTests.swift; sourceTree = "<group>"; };
 		000AF51C2140094900B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C7F4842140110200EDF906 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		00C7F4892141434900EDF906 /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarTests.swift; path = Tests/CarTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 		000AF4AC214008E800B0ECA9 = {
 			isa = PBXGroup;
 			children = (
+				00C7F4882141427100EDF906 /* Tests */,
 				000AF5242140095D00B0ECA9 /* Sources */,
 				000AF4D62140092000B0ECA9 /* MyFrameworkiOS */,
 				000AF4E12140092000B0ECA9 /* MyFrameworkiOSTests */,
@@ -155,7 +157,6 @@
 		000AF4E12140092000B0ECA9 /* MyFrameworkiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				000AF4E22140092000B0ECA9 /* MyFrameworkiOSTests.swift */,
 				000AF4E42140092000B0ECA9 /* Info.plist */,
 			);
 			path = MyFrameworkiOSTests;
@@ -173,7 +174,6 @@
 		000AF4FD2140093200B0ECA9 /* MyFrameworkTVOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				000AF4FE2140093200B0ECA9 /* MyFrameworkTVOSTests.swift */,
 				000AF5002140093200B0ECA9 /* Info.plist */,
 			);
 			path = MyFrameworkTVOSTests;
@@ -191,7 +191,6 @@
 		000AF5192140094900B0ECA9 /* MyFrameWorkMacOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				000AF51A2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift */,
 				000AF51C2140094900B0ECA9 /* Info.plist */,
 			);
 			path = MyFrameWorkMacOSTests;
@@ -203,6 +202,15 @@
 				00C7F4842140110200EDF906 /* Car.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		00C7F4882141427100EDF906 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				00C7F4892141434900EDF906 /* CarTests.swift */,
+			);
+			name = Tests;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,7 +462,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000AF4E32140092000B0ECA9 /* MyFrameworkiOSTests.swift in Sources */,
+				00C7F48A2141434900EDF906 /* CarTests.swift in Sources */,
+				00C7F48D214144BC00EDF906 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +479,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000AF4FF2140093200B0ECA9 /* MyFrameworkTVOSTests.swift in Sources */,
+				00C7F48B2141434900EDF906 /* CarTests.swift in Sources */,
+				00C7F48E214144BD00EDF906 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +496,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000AF51B2140094900B0ECA9 /* MyFrameWorkMacOSTests.swift in Sources */,
+				00C7F48C2141434900EDF906 /* CarTests.swift in Sources */,
+				00C7F48F214144BE00EDF906 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
