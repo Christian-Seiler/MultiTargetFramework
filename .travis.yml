@@ -3,24 +3,24 @@ language: objective-c
 global:
     - LC_CTYPE=en_US.UTF-8
     - LANG=en_US.UTF-8
-    - PROJECT=MyFramework.xcodeproj
+    - WORKSPACE=MyFramework/MyFramework.xcworkspace
     - IOS_SCHEME="MyFrameworkiOS"
     - IOS_SDK=iphonesimulator11.4
     - OSX_SCHEME="MyFrameworkOSX"
     - OSX_SDK=macosx10.13
     - TVOS_SCHEME="MyFrameworkTVOS"
     - TVOS_SDK=appletvsimulator11.4
-
-matrix:
-    - DESTINATION="OS=9.2,name=iPhone 4S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=iPhone 5"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=iPhone 5S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=iPhone 6"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=iPhone 6 Plus"    SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=iPhone 6S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=iPhone 6S Plus"   SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="arch=x86_64"                  SCHEME="$OSX_SCHEME"     SDK="$OSX_SDK"     RUN_TESTS="YES" POD_LINT="NO"
-    - DESTINATION="OS=9.1,name=Apple TV 1080p"   SCHEME="$TVOS_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES" POD_LINT="NO"
+env:
+    matrix:
+        - DESTINATION="OS=9.2,name=iPhone 4S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.2,name=iPhone 5"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.2,name=iPhone 5S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.2,name=iPhone 6"         SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.2,name=iPhone 6 Plus"    SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.2,name=iPhone 6S"        SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.2,name=iPhone 6S Plus"   SCHEME="$IOS_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="arch=x86_64"                  SCHEME="$OSX_SCHEME"     SDK="$OSX_SDK"     RUN_TESTS="YES" POD_LINT="NO"
+        - DESTINATION="OS=9.1,name=Apple TV 1080p"   SCHEME="$TVOS_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES" POD_LINT="NO"
 
 script:
 - set -o pipefail
@@ -28,6 +28,6 @@ script:
 - xcodebuild -showsdks
 
 #- if: $RUN_TESTS == "YES" 
-- xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c;
+- xcodebuild -project "" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c;
   #else:
   #xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
