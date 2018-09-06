@@ -66,7 +66,6 @@
 		000AF51C2140094900B0ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C7F4842140110200EDF906 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		00C7F4892141434900EDF906 /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarTests.swift; path = Tests/CarTests.swift; sourceTree = SOURCE_ROOT; };
-		00C7F4902141487A00EDF906 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +120,6 @@
 		000AF4AC214008E800B0ECA9 = {
 			isa = PBXGroup;
 			children = (
-				00C7F4902141487A00EDF906 /* .travis.yml */,
 				00C7F4882141427100EDF906 /* Tests */,
 				000AF5242140095D00B0ECA9 /* Sources */,
 				000AF4D62140092000B0ECA9 /* MyFrameworkiOS */,
